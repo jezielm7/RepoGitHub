@@ -1,18 +1,14 @@
 import React from 'react';
-import { StyleSheet, View, Text, } from 'react-native';
+import { StatusBar } from 'react-native';
 
-const styles = StyleSheet.create({
+import Routes from './routes';
 
-});
-
-export function App() {
+export default function App() {
   return (
     <>
-      <View >
-        <Text>init</Text>
-      </View>
+      <StatusBar barStyle="light-content" backgroundColor="#7159c1"/>
+      <Routes />
     </>
   );
 };
 
-export default App;
