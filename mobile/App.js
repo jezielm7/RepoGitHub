@@ -1,38 +1,14 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
+import Routes from './src/routes';
+import { NavigationContainer } from '@react-navigation/native';
 
-import {
-  StyleSheet,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
 
 export default function App() {
   return (
-    <>
-      <View style={styles.View}>
-        <Text style={styles.Text}>Init Project</Text>
-      </View>
-    </>
+    <NavigationContainer>
+      <StatusBar barStyle="light-content" backgroundColor="#7519c1" />
+      <Routes />
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  body: {
-    backgroundColor: Colors.white,
-  },
-  View: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  Text: {
-
-  },
-});
-
-export default App;
