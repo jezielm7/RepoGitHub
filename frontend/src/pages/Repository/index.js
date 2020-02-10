@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import api from '../../services/api';
 
-import { Container, Loading, Owner, IssueList, Link2 } from './styles';
+import { Container, Loading, Owner, IssueList } from './styles';
 
 export default class Repository extends Component {
   static propTypes = {
