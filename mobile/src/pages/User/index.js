@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 import api from '../../services/api';
 
@@ -18,13 +18,13 @@ import {
 } from './styles';
 
 export default class User extends Component {
-  static navigationOptions = ({ navigation }) => ({
-    title: navigation.getParam('user').name,
-  });
+  static navigationOptions = {
+    title: 'Starreds of User',
+  };
 
-  static PropTypes = {
-    navigation: PropTypes.shape({
-      navigate: PropTypes.func,
+  static propTypes = {
+    navigation: propTypes.shape({
+      navigate: propTypes.func,
     }).isRequired,
   };
 
