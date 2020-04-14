@@ -43,7 +43,7 @@ export default class Main extends Component {
   };
 
   // Salvar os dados do AsyncStorage
-  async componentDidUpdate(_, prevState) {
+  componentDidUpdate(_, prevState) {
     const { users } = this.state;
 
     if (prevState.users !== users) {
